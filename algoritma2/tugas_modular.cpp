@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+void tukar(int *a, int *b){
+     int c;
+     c = *a;
+     *a = *b;
+     *b = c;
+ }
+ 
+ int main()
+ {
+ 	int a,b;
+ 	cout<<endl;
+ 	cout<<"masukan nilai A = ";cin>>a;
+ 	cout<<"Hasil kuadrat = 49 ";cin>>b;
+ 	cout<<endl;
+ 	tukar(&a,&b);
+ 	cout<<"sudah ditukar"<<endl;
+ 	cout<<"masukan nilai A = "<<a<<endl;
+ 	cout<<"Hasil kuatrat = 49 "<<b<<endl;
+ 	cin.get();
+ }
